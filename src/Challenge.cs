@@ -26,7 +26,7 @@ namespace DesignPatternChallenge
             switch (_gateway.ToLower())
             {
                 case "pagseguro":
-                    var pagSeguroValidator = new PagSeguroValidator();
+                    var pagSeguroValidator = new f();
                     if (!pagSeguroValidator.ValidateCard(cardNumber))
                     {
                         Console.WriteLine("PagSeguro: Cartão inválido");
