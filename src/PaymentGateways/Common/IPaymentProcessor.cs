@@ -1,4 +1,4 @@
-namespace DesignPatternChallenge;
+namespace DesignPatternChallenge.PaymentGateways.Common;
 
 public interface IPaymentProcessor
 {
