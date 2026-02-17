@@ -3,9 +3,7 @@
 // (PagSeguro, MercadoPago, Stripe) e cada gateway tem componentes específicos (Processador, Validador, Logger)
 // O código atual está muito acoplado e dificulta a adição de novos gateways
 
-using System;
-
-namespace DesignPatternChallenge
+namespace AbstractFactoryChallenge
 {
     // Contexto: Sistema de pagamentos que precisa trabalhar com diferentes gateways
     // Cada gateway tem sua própria forma de processar, validar e logar transações
@@ -26,7 +24,7 @@ namespace DesignPatternChallenge
             switch (_gateway.ToLower())
             {
                 case "pagseguro":
-                    var pagSeguroValidator = new f();
+                    var pagSeguroValidator = new PagSeguroValidator();
                     if (!pagSeguroValidator.ValidateCard(cardNumber))
                     {
                         Console.WriteLine("PagSeguro: Cartão inválido");

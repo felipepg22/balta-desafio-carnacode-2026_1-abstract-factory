@@ -1,6 +1,6 @@
-using DesignPatternChallenge.PaymentGateways.Common;
+using AbstractFactoryChallenge.PaymentGateways.Common;
 
-namespace DesignPatternChallenge.PaymentGateways.Factories;
+namespace AbstractFactoryChallenge.PaymentGateways.Factories;
 public interface IPaymentGatewayFactory
 {
     ICardValidator CreateCardValidator();

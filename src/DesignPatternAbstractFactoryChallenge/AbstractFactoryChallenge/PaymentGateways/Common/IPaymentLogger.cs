@@ -1,4 +1,4 @@
-namespace DesignPatternChallenge.PaymentGateways.Common;
+namespace AbstractFactoryChallenge.PaymentGateways.Common;
 
 public interface IPaymentLogger
 {
