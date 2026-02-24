@@ -1,6 +1,7 @@
-namespace AbstractFactoryChallenge.PaymentGateways.Common;
-
-public interface IPaymentProcessor
+namespace AbstractFactoryChallenge.PaymentGateways.Common
 {
-    public string ProcessTransaction(decimal amount, string cardNumber);
+    public interface IPaymentProcessor
+    {
+        public string ProcessTransaction(decimal amount, string cardNumber);
+    }
 }

@@ -1,6 +1,7 @@
-namespace AbstractFactoryChallenge.PaymentGateways.Common;
-
-public interface ICardValidator
+namespace AbstractFactoryChallenge.PaymentGateways.Common
 {
-    public bool ValidateCard(string cardNumber);
+    public interface ICardValidator
+    {
+        public bool ValidateCard(string cardNumber);
+    }
 }

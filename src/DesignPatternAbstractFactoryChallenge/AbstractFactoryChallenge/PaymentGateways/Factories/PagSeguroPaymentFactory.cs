@@ -1,21 +1,14 @@
 using AbstractFactoryChallenge.PaymentGateways.Common;
+using AbstractFactoryChallenge.PaymentGateways.Gateways;
 
-namespace AbstractFactoryChallenge.PaymentGateways.Factories;
-
-public class PagSeguroPaymentFactory : IPaymentGatewayFactory
+namespace AbstractFactoryChallenge.PaymentGateways.Factories
 {
-    public ICardValidator CreateCardValidator()
+    public class PagSeguroPaymentFactory : IPaymentGatewayFactory
     {
-        throw new NotImplementedException();
-    }
+        public ICardValidator CreateCardValidator() => new PagSeguroCardValidator();
 
-    public IPaymentLogger CreatePaymentLogger()
-    {
-        throw new NotImplementedException();
-    }
+        public IPaymentLogger CreatePaymentLogger() => new PagSeguroLogger();
 
-    public IPaymentProcessor CreatePaymentProcessor()
-    {
-        throw new NotImplementedException();
+        public IPaymentProcessor CreatePaymentProcessor() => new PagSeguroProcessor();
     }
 }

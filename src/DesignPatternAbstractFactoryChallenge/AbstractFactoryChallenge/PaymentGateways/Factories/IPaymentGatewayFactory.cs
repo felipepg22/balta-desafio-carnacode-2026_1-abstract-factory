@@ -1,9 +1,11 @@
 using AbstractFactoryChallenge.PaymentGateways.Common;
 
-namespace AbstractFactoryChallenge.PaymentGateways.Factories;
-public interface IPaymentGatewayFactory
+namespace AbstractFactoryChallenge.PaymentGateways.Factories
 {
-    ICardValidator CreateCardValidator();
-    IPaymentLogger  CreatePaymentLogger();
-    IPaymentProcessor CreatePaymentProcessor();
+    public interface IPaymentGatewayFactory
+    {
+        ICardValidator CreateCardValidator();
+        IPaymentLogger  CreatePaymentLogger();
+        IPaymentProcessor CreatePaymentProcessor();
+    }
 }

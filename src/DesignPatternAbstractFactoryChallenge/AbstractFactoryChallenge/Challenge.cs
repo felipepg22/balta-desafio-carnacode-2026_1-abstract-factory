@@ -3,6 +3,8 @@
 // (PagSeguro, MercadoPago, Stripe) e cada gateway tem componentes específicos (Processador, Validador, Logger)
 // O código atual está muito acoplado e dificulta a adição de novos gateways
 
+using AbstractFactoryChallenge.PaymentGateways.Common;
+
 namespace AbstractFactoryChallenge
 {
     // Contexto: Sistema de pagamentos que precisa trabalhar com diferentes gateways
@@ -84,7 +86,7 @@ namespace AbstractFactoryChallenge
         }
     }
 
-    public class PagSeguroProcessor
+    public class PagSeguroProcessor : IPaymentProcessor
     {
         public string ProcessTransaction(decimal amount, string cardNumber)
         {
@@ -93,7 +95,7 @@ namespace AbstractFactoryChallenge
         }
     }
 
-    public class PagSeguroLogger
+    public class PagSeguroLogger : IPaymentLogger
     {
         public void Log(string message)
         {

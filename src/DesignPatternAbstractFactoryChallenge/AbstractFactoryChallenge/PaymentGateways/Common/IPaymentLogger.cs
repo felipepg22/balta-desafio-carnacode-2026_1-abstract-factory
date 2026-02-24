@@ -1,6 +1,7 @@
-namespace AbstractFactoryChallenge.PaymentGateways.Common;
-
-public interface IPaymentLogger
+namespace AbstractFactoryChallenge.PaymentGateways.Common
 {
-    public void Log(string message);
+    public interface IPaymentLogger
+    {
+        public void Log(string message);
+    }
 }
