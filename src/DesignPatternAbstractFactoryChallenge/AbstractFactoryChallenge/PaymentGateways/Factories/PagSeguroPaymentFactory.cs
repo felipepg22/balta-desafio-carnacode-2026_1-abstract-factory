@@ -1,5 +1,5 @@
 using AbstractFactoryChallenge.PaymentGateways.Common;
-using AbstractFactoryChallenge.PaymentGateways.Gateways;
+using AbstractFactoryChallenge.PaymentGateways.Gateways.PagSeguro;
 
 namespace AbstractFactoryChallenge.PaymentGateways.Factories
 {

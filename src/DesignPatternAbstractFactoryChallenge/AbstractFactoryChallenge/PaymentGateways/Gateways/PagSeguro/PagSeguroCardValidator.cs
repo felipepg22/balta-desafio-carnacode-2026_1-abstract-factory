@@ -1,6 +1,6 @@
 using AbstractFactoryChallenge.PaymentGateways.Common;
 
-namespace AbstractFactoryChallenge.PaymentGateways.Gateways;
+namespace AbstractFactoryChallenge.PaymentGateways.Gateways.PagSeguro;
 
 public class PagSeguroCardValidator : ICardValidator
 {
