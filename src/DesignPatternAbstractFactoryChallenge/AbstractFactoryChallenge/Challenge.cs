@@ -37,9 +37,7 @@ namespace AbstractFactoryChallenge
             logger.Log($"Transação processada: {result}");
         }
     }
-
     
-
     class Program
     {
         static void Main(string[] args)
